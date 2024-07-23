@@ -1,0 +1,49 @@
+---
+// src/components/Header.astro
+import Logo from '../assets/logo.webp';
+---
+<header class="shadow-md mt-6 mb-9">
+    <div class="container mx-auto flex items-center justify-between p-4 text-xs">
+        <div class="flex items-center space-x-4 w-1/4">
+            <img src={Logo.src} alt="Logo" class="h-20"/>
+            <div>
+                <p class="text-gray-600"> 
+                    <strong>ОcOO «Asia Water Build» (Азия Ватер Билд)</strong> – 
+                    компания, занимающаяся строительством и проектными работами.
+                </p>
+            </div>
+        </div>
+        <div class="flex items-center justify-center space-x-4 w-1/4">
+            <button class="btn-green text-white px-4 py-2 rounded text-sm button-ic animation-jump">
+                <span class="animation-blick"></span>
+                Скачать опросный лист
+            </button>
+        </div>
+        <div class="flex items-center space-x-4 w-1/4">
+            <div class="text-right">
+                <p class="text-gray-600">Лидер №1 по строительству промышленных котельных в Кыргызстане</p>
+            </div>
+        </div>
+        <div class="flex flex-col items-end space-x-4 w-1/4">
+            <p class="text-green-700">Звоните, мы работаем</p>
+            <a href="tel:0555774128" class="font-bold text-2xl">+996 555 77 41 28</a>
+            <div class="flex space-x-2">
+                <a href="https://wa.me/996555774128" target="_blank"><img src="/path/to/whatsapp-icon.png" alt="WhatsApp" class="h-6"/></a>
+                <a href="https://t.me/username" target="_blank"><img src="/path/to/telegram-icon.png" alt="Telegram" class="h-6"/></a>
+            </div>
+        </div>
+    </div>
+    <nav class="bg-gray-100 border-2 border-blue-400 border-solid rounded-md py-5 px-8">
+        <div class="container mx-auto flex justify-between p-2">
+            <a href="#" class="text-blue-900">ГЛАВНАЯ</a>
+            <a href="#" class="text-blue-900">О НАС</a>
+            <a href="#" class="text-blue-900">НАШИ УСЛУГИ</a>
+            <a href="#" class="text-blue-900">НАШИ РАБОТЫ</a>
+            <a href="#" class="text-blue-900">ДИЛЕРАМ</a>
+            <a href="#" class="text-blue-900">КОНСУЛЬТАЦИЯ</a>
+            <a href="#" class="text-blue-900">КОТЕЛЬНЫЕ</a>
+            <a href="#" class="text-blue-900">КОНТАКТЫ</a>
+            <a href="#" class="text-blue-900">+996 312 365-602</a>
+        </div>
+    </nav>
+</header>

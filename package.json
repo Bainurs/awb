@@ -7,9 +7,15 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "build:css": "tailwindcss -i ./src/styles/global.css -o ./dist/styles.css"
   },
   "dependencies": {
-    "astro": "^4.12.1"
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.12.1",
+    "swiper": "^11.1.5"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.6"
   }
 }

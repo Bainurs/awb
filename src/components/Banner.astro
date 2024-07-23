@@ -1,0 +1,42 @@
+---
+import BannerSlider from "./sliders/BannerSlider.astro";
+
+// src/components/Banner.astro
+---
+
+<div class="container mx-auto px-4 banner mb-6">
+    <div class="flex items-stretch justify-center">
+        <div class="w-2/4 pt-24">
+            <div class="shadow-blue-box parallelogram">
+                <h2>Экологичность - надежность - долговечность</h2>
+            </div>
+            <div class="pl-2 pt-4">
+                <h2 class="title">
+                    Проектирование и строительство
+                    <span class="text-blue-500 font-bold"> котельных всех типов</span>
+                    по всему Кыргызстану
+                </h2>
+                <div class="flex justify-start items-center">
+                    <div class="flex justify-center items-stretch info">
+                        <span class="info-big-num">15</span>
+                        <div class="info-text">
+                            <span class="info-small-text">минимальный срок службы</span>
+                            <span>лет</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-stretch info">
+                        <span class="info-big-num">№1</span>
+                        <div class="info-text">
+                            <span class="info-small-text">компания  в Бишкеке</span>
+                            <span>лидер</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="w-2/4 slider">
+            <BannerSlider />
+        </div>
+    </div>
+</div>

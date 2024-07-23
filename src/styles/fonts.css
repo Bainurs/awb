@@ -1,0 +1,31 @@
+@font-face {
+    font-family: Gilroy-ExtraBold;
+    font-display: swap;
+    font-style: normal;
+    font-weight: 600;
+    src: local("Gilroy-ExtraBold"),url("../assets/fonts/Gilroy-ExtraBold.woff") format("woff")
+}
+
+@font-face {
+    font-family: Gilroy-Light;
+    font-display: swap;
+    font-style: normal;
+    font-weight: 200;
+    src: local("Gilroy-Light"),url("../assets/fonts/Gilroy-Light.woff") format("woff")
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto-Regular"),url("../assets/fonts/Roboto-Regular.woff") format("woff")
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+    src: local("Roboto-Bold"),url("../assets/fonts/Roboto-Bold.woff") format("woff")
+}

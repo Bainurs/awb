@@ -1,0 +1,58 @@
+.animation-jump::after, .animation-jump::before {
+    -webkit-animation: jumpAnim 4.5s infinite linear;
+    animation: jumpAnim 4.5s infinite linear;
+}
+
+@-webkit-keyframes jumpAnim {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    15% {
+        -webkit-transform: translateY(-7%);
+        transform: translateY(-7%)
+    }
+    25% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    35% {
+        -webkit-transform: translateY(-3%);
+        transform: translateY(-3%)
+    }
+    45% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+@keyframes jumpAnim {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    15% {
+        -webkit-transform: translateY(-7%);
+        transform: translateY(-7%)
+    }
+    25% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    35% {
+        -webkit-transform: translateY(-3%);
+        transform: translateY(-3%)
+    }
+    45% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}

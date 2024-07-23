@@ -1,0 +1,95 @@
+.banner .slider {
+    height: 483px;
+}
+
+.banner .parallelogram {
+    max-width: 560px;
+    padding: 0;
+}
+.shadow-blue-box {
+    background: #2b7fc1;
+    background: -webkit-gradient(linear, left bottom, left top, from(#2b7fc1), to(#41a1ec));
+    background: linear-gradient(0deg, #2b7fc1 0, #41a1ec 100%);
+    -webkit-box-shadow: 11px 11px 27px 0 rgba(0, 0, 0, .25);
+    box-shadow: 11px 11px 27px 0 rgba(0, 0, 0, .25);
+    border-radius: 5px;
+
+}
+.parallelogram {
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    transform: skew(-20deg);
+    padding: 0 50px;
+}
+.parallelogram h2 {
+    font-family: Gilroy-Light, Arial, sans-serif;
+    font-size: 22px;
+    line-height: 60px;
+    color: #fff;
+}
+
+.parallelogram h2 {
+    text-align: center;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    transform: skew(20deg);
+}
+
+.banner .title {
+    line-height: 54px;
+    font-size: 40px;
+    color: #222;
+    font-family: Gilroy-ExtraBold, Arial, sans-serif;
+    font-weight: 400;
+}
+
+.banner .info {
+    max-width: 170px;
+    font-family: Gilroy-ExtraBold, Arial, sans-serif;
+    color: #e0c05d;
+    font-size: 35px;
+    line-height: 30px;
+    margin-right: 55px;
+    position: relative;
+}
+.banner .info:last-child {
+    margin-right: 0;
+    max-width: 205px;
+}
+
+.banner .info::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../assets/avirus.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+    right: 9px;
+    bottom: 10px;
+}
+.banner .info:last-child::before {
+    width: 30px;
+    height: 30px;
+    top: 6px;
+    right: 0;
+    background-image: url(../assets/cup.webp);
+    background-size: 30px;
+}
+.banner .info-big-num {
+    font-size: 70px;
+    line-height: 70px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.info-small-text {
+    font-size: 14px;
+    line-height: 14px;
+    color: #222;
+    display: inline-block;
+    font-family: Gilroy-Light, Arial, sans-serif;
+}

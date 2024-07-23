@@ -1,0 +1,91 @@
+.adventages {
+    margin-bottom: 145px;
+}
+.adventages .item {
+    max-width: 370px;
+    width: 370px;
+    padding: 19px 38px 20px 115px;
+    font-family: Gilroy-Light, Arial, sans-serif;
+    position: relative;
+    background: #2b7fc1;
+    background: -webkit-gradient(linear, left bottom, left top, from(#2b7fc1), to(#41a1ec));
+    background: linear-gradient(0deg, #2b7fc1 0, #41a1ec 100%);
+    -webkit-box-shadow: 11px 11px 27px 0 rgba(0, 0, 0, .25);
+    box-shadow: 11px 11px 27px 0 rgba(0, 0, 0, .25);
+    border-radius: 5px;
+}
+.adventages .item::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.adventages .item.certification::before {
+    width: 65px;
+    height: 70px;
+    background-image: url(../assets/certification.webp);
+    background-size: 64px 70px;
+}
+.adventages .item.full-constr::before {
+    width: 53px;
+    height: 68px;
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    background-image: url(../assets/full-construction.webp);
+    background-size: 53px 68px;
+}
+.adventages .item.protect::before {
+    width: 75px;
+    height: 73px;
+    background-image: url(../assets/protection.webp);
+    background-size: 75px 73px;
+}
+.adventages .item h4 {
+    font-family: Gilroy-ExtraBold, Arial, sans-serif;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+.adventages .item .desc {
+    padding-right: 11px;
+    font-size: 15px;
+    line-height: 18px;
+    position: relative;
+}
+.adventages .item .desc::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    height: 55px;
+    width: 1px;
+    background: #fff;
+    opacity: .31;
+    left: -18px;
+    top: -21px;
+}
+.adventages .item .check-icon {
+    background: -webkit-gradient(linear, left top, right top, from(#e8e8e8), color-stop(60%, #e8e8e8), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(90deg, #e8e8e8 0, #e8e8e8 60%, rgba(0, 0, 0, 0) 100%);
+    -webkit-box-shadow: inset 23px 22px 37px -16px rgba(0, 0, 0, .08);
+    box-shadow: inset 23px 22px 37px -16px rgba(0, 0, 0, .08);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    right: -25px;
+    top: calc(50% - 25px);
+}
+
+.adventages .item .check-icon::before {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../assets/check-mark.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+}

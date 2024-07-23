@@ -1,0 +1,72 @@
+@import "/src/styles/fonts.css";
+@import "/src/styles/animations.css";
+@import "/src/styles/banner.css";
+@import "/src/styles/adventages.css";
+
+h1, h2, h3, h4, p, ul {
+    margin: 0;
+    padding: 0;
+}
+.section-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 770px;
+    background: url(../assets/bg1.webp);
+    z-index: -1;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+.btn-green {
+    background: #65c473;
+    background: -webkit-gradient(linear, right top, left top, from(#65c473), color-stop(150%, #389658));
+    background: linear-gradient(-90deg, #65c473 0, #389658 150%);
+    -webkit-box-shadow: 0 5px 0 0 #307d47;
+    box-shadow: 0 5px 0 0 #307d47;
+    border-radius: 4px;
+    font-family: Gilroy-Light, Arial, sans-serif;
+    font-size: 10px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 40px;
+}
+.button-ic {
+    position: relative;
+}
+.button-ic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: 41px;
+    height: 54px;
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    background-color: transparent;
+    background-image: url(../assets/ic-trend.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+nav .container a {
+    display: list-item;
+    margin-right: 5px;
+}
+/*clients styles*/
+.clients {
+    margin-bottom: 35px;
+}
+.clients .text {
+    font-family: Gilroy-Light, Arial, sans-serif;
+    -webkit-box-align: start;
+    -webkit-box-pack: start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+}
+
+.clients .font-bold {
+    font-family: Gilroy-ExtraBold, Arial, sans-serif;
+}
+
+.clients .carousel-clients {
+    height: 300px;
+}
