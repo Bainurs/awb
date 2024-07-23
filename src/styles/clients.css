@@ -1,0 +1,18 @@
+.clients {
+    margin-bottom: 35px;
+}
+.clients .text {
+    font-family: Gilroy-Light, Arial, sans-serif;
+    -webkit-box-align: start;
+    -webkit-box-pack: start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+}
+
+.clients .font-bold {
+    font-family: Gilroy-ExtraBold, Arial, sans-serif;
+}
+
+.clients .carousel-clients {
+    height: 300px;
+}

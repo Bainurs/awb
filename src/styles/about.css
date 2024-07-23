@@ -1,0 +1,39 @@
+.about {
+    margin-top: 120px;
+    margin-bottom: 15px;
+}
+.about .block {
+    margin-bottom: 45px;
+    width: 100%;
+}
+.about .caption {
+    font-family: Gilroy-Light, Arial, sans-serif;
+    line-height: 1.16;
+    width: 520px;
+    outline-offset: -10px;
+    -webkit-box-shadow: 0 11px 27px 0 rgba(0, 0, 0, .08);
+    box-shadow: 0 11px 27px 0 rgba(0, 0, 0, .08);
+    outline: 1px solid #e8e8e8;
+    padding: 45px 40px 54px 40px;
+    top: -51px;
+    left: 0;
+}
+.about .caption::before {
+    width: 213px;
+    height: 186px;
+    content: '';
+    position: absolute;
+    top: 260px;
+    left: -10px;
+    background-image: url(../assets/protection.webp);
+    background-repeat: no-repeat;
+    background-size: 213px 186px;
+}
+.about .text {
+    margin-left: 250px;
+    font-family: Roboto-Regular, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    border: 7px solid #017bdc;
+    padding: 55px 55px 55px 310px;
+}

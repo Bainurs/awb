@@ -2,6 +2,8 @@
 @import "/src/styles/animations.css";
 @import "/src/styles/banner.css";
 @import "/src/styles/adventages.css";
+@import "/src/styles/clients.css";
+@import "/src/styles/about.css";
 
 h1, h2, h3, h4, p, ul {
     margin: 0;
@@ -52,21 +54,99 @@ nav .container a {
     margin-right: 5px;
 }
 /*clients styles*/
-.clients {
-    margin-bottom: 35px;
+.training {
+    margin-top: 70px;
+    margin-bottom: 103px;
+    border-radius: 5px;
+    padding: 51px 30px 65px 38px;
+    background-color: #f6f7f8;
 }
-.clients .text {
-    font-family: Gilroy-Light, Arial, sans-serif;
-    -webkit-box-align: start;
-    -webkit-box-pack: start;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
+.training .tr-top {
+    margin-top: 14px;
+    margin-bottom: 85px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-
-.clients .font-bold {
+.training .tr-title {
+    line-height: 1.2;
+    margin-bottom: 23px;
+    width: 53%;
+    z-index: 1;
+    color: #222;
     font-family: Gilroy-ExtraBold, Arial, sans-serif;
 }
-
-.clients .carousel-clients {
-    height: 300px;
+.training .tr-text {
+    line-height: 1.5;
+    width: 50%;
+    z-index: 1;
+}
+.training .tr-img {
+    width: 860px;
+    height: auto;
+    bottom: -85px;
+    right: -23px;
+}
+.training .tr-img img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+}
+.training .step-wrap {
+    margin-bottom: 35px;
+}
+.step-wrap .step-item {
+    width: 320px;
+}
+.step-wrap .step-item .step-num {
+    font-size: 68px;
+    line-height: 1.2;
+    padding-left: 70px;
+}
+.step-wrap .step-item::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: -24px;
+    border-left: 1px solid #d1d1d1;
+    height: 50%;
+}
+.step-wrap .step-item:first-child .step-num {
+    padding-left: 87px;
+}
+.step-wrap .step-item:first-child .step-num::before {
+    background-image: url(../assets/dostavka_v_srok.webp);
+    left: 10px;
+}
+.step-wrap .step-item:nth-child(2) .step-num::before {
+    background-image: url(../assets/protection.webp);
+    width: 77px;
+    height: 79px;
+    -webkit-transform: rotate(-150deg) scale(1.6);
+    transform: rotate(-150deg) scale(1.6);
+    left: 16px;
+    top: 5px;
+}
+.step-wrap .step-item:nth-child(3) .step-num::before {
+    background-image: url(../assets/our-spec.webp);
+    width: 70px;
+    height: 70px;
+    left: 20px;
+    top: 8px;
+}
+.step-wrap .step-item .step-num::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 82px;
+    height: 85px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.step-wrap .step-item .step-text {
+    color: #677c91;
+    line-height: 1.3;
+    margin-bottom: 10px;
 }
