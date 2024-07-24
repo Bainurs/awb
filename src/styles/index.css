@@ -62,9 +62,35 @@ button, input, optgroup, select, textarea {
     box-shadow: 0 5px 0 0 #307d47;
     border-radius: 4px;
     font-family: Gilroy-Light, Arial, sans-serif;
-    font-size: 10px;
+    font-size: 13px;
     border-radius: 10px;
-    padding: 10px 10px 10px 40px;
+    padding: 10px 10px 10px 45px;
+}
+.logo-link {
+    display: inline-block;
+    width: 90px;
+}
+.header {
+    font-size: 12px;
+    line-height: 17px;
+    font-family: Gilroy-Light, Arial, sans-serif;
+}
+.cup {
+    width: 270px;
+    padding-left: 75px;
+}
+.cup:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: -10px;
+    left: 40px;
+    width: 64px;
+    height: 66px;
+    background-color: transparent;
+    background-image: url(../assets/cup.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .button-ic {
     position: relative;
@@ -112,3 +138,144 @@ nav .container a {
     margin-right: 5px;
 }
 /*clients styles*/
+.types-floor {
+    padding: 60px 30px 0 30px;
+    background-color: #f6f7f8;
+}
+.types-floor .title {
+    margin-left: 10px;
+    color: #222;
+    font-family: Gilroy-ExtraBold, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 1;
+}
+.types-floor .fl-menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+    border-radius: 5px;
+    margin-top: 55px;
+    margin-right: 55px;
+    padding: 0 20px;
+}
+.types-floor .nav-pills {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 5px;
+    list-style: none;
+    font-family: Gilroy-ExtraBold, Arial, sans-serif;
+    font-size: 14px;
+    width: 100%;
+}
+.types-floor .nav-link.active {
+    color: #fff;
+    background-color: #017bdc;
+    -webkit-box-shadow: 0 10px 27px 0 rgba(0, 0, 0, .25) !important;
+    box-shadow: 0 10px 27px 0 rgba(0, 0, 0, .25) !important;
+    border-radius: 5px;
+}
+
+.types-floor .nav-link {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 70px;
+    width: 250px;
+    background-color: #f6f7f8;
+    border-style: none;
+    border-radius: 5px;
+    color: #000;
+    font-family: Gilroy-ExtraBold, Arial, sans-serif !important;
+    font-size: 18px !important;
+    text-transform: none !important;
+    font-weight: 400 !important;
+    margin-right: 15px;
+    padding: 5px 20px 5px 19px;
+}
+.types-floor .nav-item a {
+    text-decoration: none;
+}
+.types-floor .tap-pane {
+    display: none;
+}
+.types-floor .tap-pane.active {
+    display: block;
+}
+.types-floor .fade {
+    transition: opacity .15s linear;
+}
+.types-floor .fl-content {
+    padding: 25px 45px;
+    font-family: Roboto-Regular, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.types-floor .fl-col {
+    width: 43%;
+    margin-right: 55px;
+}
+.types-floor fl-col-img {
+    margin-top: 30px;
+    margin-bottom: 35px;
+    width: 470px;
+    height: 350px;
+    border-radius: 5px;
+    vertical-align: middle;
+    border-style: none;
+}
+.types-floor .fl-objects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    margin-left: 5px;
+    margin-top: 25px;
+}
+.types-floor .fl-objects .fl-title {
+    margin-left: 20px;
+    margin-bottom: 10px;
+
+}
+.types-floor .fl-title {
+    font-family: Roboto-Bold, Arial, sans-serif;
+    font-size: 20px;
+    color: #017bdc;
+    text-align: left;
+    line-height: 1.2;
+    font-weight: 500;
+}
+.types-floor .fl-list {
+    margin: 0 0 30px 0;
+    line-height: 1.43;
+    font-family: Roboto-Regular, Arial, sans-serif;
+    font-size: 16px;
+    padding: 0;
+}
+.types-floor .fl-list-item {
+    padding-left: 25px;
+    margin-bottom: 12px;
+    list-style: none;
+}
+.types-floor .fl-list-item::before {
+    content: '';
+    width: 13px;
+    height: 13px;
+    background-image: url(../assets/ic-okey.svg);
+    background-size: 8px 8px;
+    background-position: center center;
+    border: 1px solid #0cbe44;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
