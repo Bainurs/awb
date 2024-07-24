@@ -5,12 +5,10 @@ const PolymerCard = ({ item, localImg, href, index }) => {
     const [isActive, setIsActive] = useState(false);
 
     const handleMouseEnter = () => {
-        console.log('Mouse entered');
         setIsActive(true);
     };
 
     const handleMouseLeave = () => {
-        console.log('Mouse left');
         setIsActive(false);
     };
 

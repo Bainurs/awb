@@ -13,6 +13,8 @@ const polimerProps = [
     {text: 'Обучение', subtitle: 'Обучим ваш персонал для максимально качественной и  бесперебойной работы котельной'},
     
 ]
+
+const tooltipImg = localImg.src;
 ---
 
 <div class="container mx-auto polimer">
@@ -51,7 +53,7 @@ const polimerProps = [
             <div class="polimer-props z-0 flex absolute">
                 {
                     polimerProps.map((item, index) => (
-                        <PolymerCard client:visible item={item} localImg={localImg.src} index={index} href="../assets/docs/oprosnyy_list.docx" />
+                        <PolymerCard client:load item={item} localImg={tooltipImg} index={index} href="../assets/docs/oprosnyy_list.docx" />
                     ))
                 }
             </div>
