@@ -1,6 +1,12 @@
 .adventages {
     margin-bottom: 145px;
 }
+.adv-item {
+    width: 35%;
+    max-width: 370px;
+    margin-right: 30px;
+    position: relative;
+}
 .adventages .item {
     max-width: 370px;
     width: 370px;

@@ -1,0 +1,186 @@
+.owner {
+    padding-top: 28px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #f6f7f8;
+}
+.owner .m-owner {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.owner .person {
+    width: 370px;
+}
+.owner .person .top {
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+.owner .person .img {
+    border-radius: 5px;
+    overflow: hidden;
+    min-width: 370px;
+    min-height: 446px;
+    width: 370px;
+    height: 446px;
+}
+.owner .person .img img {
+    width: 100%;
+    height: auto;
+}
+.owner .person .fio {
+    font-family: Gilroy-ExtraBold, Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f8c74a;
+    padding: 11px 20px;
+    bottom: -16px;
+    left: 42px;
+}
+.parallelogram .parallelogram-title {
+    text-align: center;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+}
+.city-items {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    height: 26vw;
+    width: 26vw;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+}
+.city-items .pulse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 26vw;
+    width: 26vw;
+    border: 1px solid #ffb458;
+    border-radius: 50%;
+    opacity: .3;
+}
+.city-items .item-1 {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+.city-items .item-2 {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+.city-items .item-4 {
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+}
+.city-items .item-1 {
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+}
+.owner-form {
+    padding: 90px 0;
+}
+.owner-form .title{
+    font-family: Gilroy-Light, Arial, sans-serif;
+    line-height: 1.2;
+    padding: 0 5px 0 20px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: #222;
+}
+.owner-form .title span{
+    font-family: Gilroy-ExtraBold, Arial, sans-serif;
+}
+.owner-form .text {
+    line-height: 1.3;
+    padding: 0 5px 0 20px;
+    margin-bottom: 30px;
+}
+.owner-form .contact {
+    padding-bottom: 60px;
+}
+.owner-form .contact::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: -40px;
+    right: 10px;
+    width: 78px;
+    height: 119px;
+    background-color: transparent;
+    background-image: url(../assets/004-call.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.owner-form .contact h2  {
+    line-height: 1.2;
+    margin-bottom: 10px;
+    color: #222;
+    font-family: Gilroy-ExtraBold, Arial, sans-serif;
+    font-size: 30px;
+}
+.owner-form .contact p {
+    margin-bottom: 33px;
+    font-size: 14px;
+}
+.o-form .form-control {
+    background-color: #e3e3e3;
+    border-radius: 5px;
+    border: 0;
+    color: #a9a9a9;
+    height: 54px;
+    text-align: center;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.o-form .btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    border-radius: 4px;
+    width: 100%;
+    height: 54px;
+    font-family: Gilroy-ExtraBold, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.o-form .btn-green {
+    box-shadow: 0 5px 0 0 #307d47;
+    background: #65c473;
+    background: -webkit-gradient(linear, right top, left top, from(#65c473), color-stop(150%, #389658));
+    background: linear-gradient(-90deg, #65c473 0, #389658 150%);
+    -webkit-box-shadow: 0 5px 0 0 #307d47;
+}
+.owner-form .block-sh {
+    width: 93%;
+    height: 10px;
+    border-radius: 0 0 10px 10px;
+    background: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(36%, #fff), to(#fff));
+    background: linear-gradient(to bottom, #fff 36%, #fff 100%);
+    margin: 0 auto;
+}

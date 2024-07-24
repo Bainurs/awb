@@ -1,3 +1,8 @@
+@media screen and (min-width: 1200px) {
+    .banner.container {
+        max-width: 1370px;
+    }
+}
 .banner .slider {
     height: 483px;
 }

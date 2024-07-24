@@ -1,0 +1,69 @@
+---
+// src/components/Owner.astro
+import localImg from '../assets/price-cotl.webp'
+---
+
+<div class="container mx-auto owner">
+    <div class="flex flex-wrap m-owner">
+        <div class="lg:w-5/12 md:w-full px-4 md:flex justify-center">
+            <div class="person flex flex-col text-black">
+                <div class="relative top">
+                    <div class="inline-block overflow-hidden img">
+                        <img src={localImg.src} alt="промышленные котлы бишкек цена">
+                    </div>
+                    <div class="inline-block absolute fio parallelogram">
+                        <div class="parallelogram-title">
+                            Опыт более 10 лет
+                        </div>
+                    </div>
+                    <div class="city-items">
+                        <div class="item-1 pulse"></div>
+                        <div class="item-2 pulse"></div>
+                        <div class="item-3 pulse"></div>
+                        <div class="item-4 pulse"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lg:w-7/12 md:w-full px-4">
+            <div class="owner-form">
+                <h2 class="title">
+                    Получите 
+                    <span class="text-blue-500"> консультацию</span>
+                    по проектированию.
+                </h2>
+                <p class="text">
+                    «Наша команда инженеров-проектировщиков с 10 летним опытом, проконсультирует вас по вашему проекту. 
+                    Подберем для вас оптимальное и наиболее выгодное решение.
+                </p>
+                <div>
+                    <div class="relative bg-white rounded-xl contact animation-jump px-10 pt-10 shadow-lg">
+                        <h2>
+                            Если у Вас комплексный проект, я 
+                            <span class="text-blue-500">готов обсудить детали проекта лично</span>
+                        </h2>
+                        <p>
+                            и сделать Вам максимальную скидку. Просто оставьте Ваш телефон
+                        </p>
+                        <form action="mail.php" method="POST" id="appl_form1" name="appl_form1" class="o-form needs-validation" novalidate>
+                            <div class="flex flex-wrap">
+                                <div class="md:w-6/12 sm:w-full px-4">
+                                    <div class="form-group mb-0 md:mb-1">
+                                        <input type="text" class="form-control phone" name="user_phone" placeholder="+ 996 (___)__ __ __" required>
+                                    </div>
+                                </div>
+                                <div class="md:w-6/12 sm:w-full px-4">
+                                    <button type="submit" name="submit" class="btn btn-green text-white relative">
+                                        <span class="btn-blik"></span>
+                                        Связаться с директором
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="block-sh shadow"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

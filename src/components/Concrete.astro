@@ -1,0 +1,50 @@
+---
+// src/components/Concrete.astro
+import localSkladImg from '../assets/sklad.webp';
+import localVodoImg from '../assets/vodopr.webp';
+
+const concreteData = [
+    {
+        title: ' производственных помещений, цехов, складов и т.д',
+        lists: ['Разработка проектно-сметной документации (ПСД);', 'Строительно-монтажные работы;', 'Ввод объекта в эксплуатацию;'],
+        img: localSkladImg.src,
+    },
+    {
+        title: ' водопроводных сетей канализации, теплотрассы.',
+        lists: [
+            'Разработка проектно-сметной документации (ПСД);',
+            'Устройство внеплощадочных и внутриплощадочных инженерных систем;',
+            'Устройство насосных станций;',
+            'Устройство отопительных пунктов, элеваторов и т.д.'
+        ],
+        img: localVodoImg.src,
+    }
+]
+---
+
+<div class="container mx-auto concrete">
+    {
+        concreteData.map((item) => (
+                <div class="flex flex-row justify-start items-start block">
+                    <div class="flex flex-col justify-center items-center text">
+                        <p>
+                            Проектирование и строительство
+                            <span class="text-blue-500">{item.title}</span>
+                        </p>
+                        <ul class="list">
+                            {
+                                item.lists.map((list) => (
+                                <li class="list-item">
+                                    {list}
+                                </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                    <div class="flex flex-col justify-start items-start bl-img">
+                        <img src={item.img} alt="Разрушенный бетонный пол">
+                    </div>
+                </div>
+            ))
+        }
+</div>

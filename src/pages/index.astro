@@ -6,15 +6,21 @@ import Adventages from '../components/Adventages.astro';
 import Clients from '../components/Clients.astro';
 import About from '../components/About.astro';
 import Training from '../components/Training.astro';
+import Owner from '../components/Owner.astro';
+import Concrete from '../components/Concrete.astro';
+import Polimer from '../components/Polimer.astro';
 ---
 <BaseLayout>
 	<Header />
-	<main>
-		<div class="section-bg"></div>
-		<Banner />
-		<Adventages />
-		<Clients />
-		<About />
-		<Training />
-	</main>
+
+	<div class="section-bg"></div>
+	<Banner />
+	<Adventages />
+	<Clients />
+	<About />
+	<Training />
+	<Owner />
+	<Concrete />
+	<Polimer client:load />
+	
 </BaseLayout>

@@ -1,0 +1,234 @@
+.polimer .wrap {
+    margin-bottom: 75px;
+    margin-top: 130px;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.polimer .desc {
+    width: 470px;
+    margin-top: 45px;
+    z-index: 1;
+    background: #45a6f4;
+    background: -webkit-gradient(linear, right top, left top, from(#45a6f4), to(#2778b8));
+    background: linear-gradient(-90deg, #45a6f4 0, #2778b8 100%);
+    -webkit-box-shadow: 0 11px 27px 0 rgba(0, 0, 0, .25);
+    box-shadow: 0 11px 27px 0 rgba(0, 0, 0, .25);
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+}
+.polimer .desc-in {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    border: 1px solid #71addd;
+    border-radius: 4px;
+    padding: 50px 46px 40px;
+}
+.polimer .title {
+    line-height: 1.2;
+    margin-bottom: 18px;
+    font-family: Gilroy-ExtraBold, Arial, sans-serif;
+    font-size: 30px;
+}
+.polimer .text {
+    line-height: 1.5;
+    padding-bottom: 25px;
+    margin-bottom: 19px;
+}
+.polimer .text::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: calc((100% - 76%) / 2);
+    width: 76%;
+    border-top: 1px solid #c6c6c6;
+}
+.polimer .o-form {
+    padding: 0 20px;
+}
+.polimer .o-form .title {
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    font-family: Gilroy-ExtraBold, Arial, sans-serif;
+    font-size: 20px;
+}
+.polimer .o-form .form-control {
+    background-color: #e3e3e3;
+    border-radius: 5px;
+    border: 0;
+    color: #a9a9a9;
+    height: 54px;
+    text-align: center;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    padding: .375rem .75rem;
+}
+.polimer .form-control-sh {
+    background-color: #fff !important;
+    -webkit-box-shadow: inset 0 10px 13px 0 rgba(0, 0, 0, .25) !important;
+    box-shadow: inset 0 10px 13px 0 rgba(0, 0, 0, .25) !important;
+}
+.polimer .o-form .btn {
+    width: 100%;
+    height: 54px;
+    font-family: Gilroy-ExtraBold, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.polimer .btn-green {
+    background: #65c473;
+    background: -webkit-gradient(linear, right top, left top, from(#65c473), color-stop(150%, #389658));
+    background: linear-gradient(-90deg, #65c473 0, #389658 150%);
+    -webkit-box-shadow: 0 5px 0 0 #307d47;
+    box-shadow: 0 5px 0 0 #307d47;
+    border-radius: 4px;
+    font-family: Gilroy-Light, Arial, sans-serif;
+    font-size: 10px;
+    color: #fff;
+}
+.polimer .btn-blik {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.polimer .btn-blik::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(229, 172, 142, 0)), color-stop(50%, rgba(255, 255, 255, .7)), to(rgba(229, 172, 142, 0)));
+    background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255, 255, 255, .7) 50%, rgba(229, 172, 142, 0));
+    -webkit-transform: rotateZ(60deg) translate(-5em, 7.5em);
+    transform: rotateZ(60deg) translate(-5em, 7.5em);
+    opacity: 0;
+    -webkit-animation: sheens 3s infinite;
+    animation: sheens 3s infinite;
+    z-index: 1;
+}
+.polimer .polimer-props {
+    width: 827px;
+    height: 675px;
+    border-radius: 5px;
+    z-index: -1;
+    left: -143px;
+    background-color: transparent;
+    background-image: url(../assets/kotel.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.polimer .polymer-prop.parallelogram {
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+}
+.polimer .polymer-prop {
+    top: 0;
+    left: 0;
+    background-color: #00000066;
+    min-height: 38px;
+    height: 38px;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+.polimer-props .pos-1 {
+    top: 130px;
+    left: 31%;
+}
+.polimer-props .pos-2 {
+    top: 150px;
+    left: 66%;
+}
+.polimer-props .pos-3 {
+    top: 233px;
+    left: 20%;
+}
+.polimer-props .pos-4 {
+    top: 257px;
+    left: 58%;
+}
+.polimer-props .pos-5 {
+    top: 344px;
+    left: 29%;
+}
+.polimer-props .pos-6 {
+    top: 362px;
+    left: 65%;
+}
+.polimer-props .pos-7 {
+    top: 437px;
+    left: 46%;
+}
+.polimer .parallelogram .polymer-title {
+    text-align: center;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+}
+.polimer .parallelogram .polymer-text {
+    text-transform: uppercase;
+}
+.polimer .parallelogram .polimer-img {
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    margin-left: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-animation: pulse3 2s infinite;
+    animation: pulse3 2s infinite;
+}
+.polimer .subTitle {
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    position: absolute;
+    min-width: 220px;
+    top: 110%;
+    left: 0;
+    z-index: 10;
+    transition: all .4s linear;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 15px;
+    box-shadow: 0 0 10px 0 #44526d;
+    text-align: left;
+}
+.polimer .subTitle.active {
+    opacity: 1;
+    visibility: visible;
+    transition: all .4s linear;
+}
+.polimer .subTitle a {
+    margin-top: 14px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4caa64;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    text-decoration: none;
+}
