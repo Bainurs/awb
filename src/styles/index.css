@@ -273,6 +273,7 @@ nav .container a {
     background-image: url(../assets/ic-okey.svg);
     background-size: 8px 8px;
     background-position: center center;
+    background-repeat: no-repeat;
     border: 1px solid #0cbe44;
     border-radius: 50%;
     position: absolute;
