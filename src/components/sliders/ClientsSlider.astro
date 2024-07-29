@@ -1,18 +1,35 @@
 ---
-import Slider from './Slider.jsx';
-import buildKotlImg from '../../assets/slider/banner/build-kotl.webp';
-import parKotlImg from '../../assets/slider/banner/par-kotl.webp';
-import prUglKotlImg from '../../assets/slider/banner/pr-ugl-kotl.webp';
+import Slider from '../reactComponents/Slider.jsx';
+import AltynImg from '../../assets/slider/clients/alyanc-altyn.webp';
+import AgrokushImg from '../../assets/slider/clients/agrokush.webp';
+import ToibosImg from '../../assets/slider/clients/toibos.webp';
+import EcoPrdImg from '../../assets/slider/clients/eco-product-asia.webp';
+import TumarImg from '../../assets/slider/clients/tumar.webp';
+import IfaImg from '../../assets/slider/clients/ifa.webp';
+import LucsImg from '../../assets/slider/clients/lucs.webp';
+import GesImg from '../../assets/slider/clients/GES.webp';
+import NarynGesImg from '../../assets/slider/clients/naryn-ges.webp';
+import RihaImg from '../../assets/slider/clients/riha.webp';
 
 const slides = [
-    {img: buildKotlImg.src, title: 'Модульные котельные'}, 
-    {img: parKotlImg.src, title: 'Промышленные котлы'}, 
-    {img: prUglKotlImg.src, title: 'Твердотопливные котлы'}
+    {id: 1, img: AltynImg.src, name: "Альянс Алтын", client: true},
+    {id: 2, img: AgrokushImg.src, name: "Альянс Алтын", client: true},
+    {id: 3, img: ToibosImg.src, name: "Альянс Алтын", client: true},
+    {id: 4, img: EcoPrdImg.src, name: "Альянс Алтын", client: true},
+    {id: 5, img: TumarImg.src, name: "Альянс Алтын", client: true},
+    {id: 6, img: IfaImg.src, name: "Альянс Алтын", client: true},
+    {id: 7, img: LucsImg.src, name: "Альянс Алтын", client: true},
+    {id: 8, img: GesImg.src, name: "Альянс Алтын", client: true},
+    {id: 9, img: NarynGesImg.src, name: "Альянс Алтын", client: true},
+    {id: 10, img: RihaImg.src, name: "Альянс Алтын", client: true},
 ];
-const settings = {
-    slidesPerView: 1,
-    autoplay: 4000
+const sliderSettings = {
+    slidesPerView: 5,
+    autoplay: 3000,
+    spaceBetween: 30,
+    button: 'client'
 }
 ---
-
-<Slider slides={slides} sliderSettings={settings} client:load />
+<> 
+    <Slider {slides} {sliderSettings} client:load />
+</>

@@ -150,3 +150,9 @@
     cursor: auto;
     pointer-events: none;
 }
+.banner .swiper-slide .slide-decs {
+    display: none;
+}
+.banner .swiper-slide.swiper-slide-active .slide-decs {
+    display: block;
+}

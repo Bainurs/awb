@@ -13,9 +13,6 @@
     font-family: Gilroy-ExtraBold, Arial, sans-serif;
 }
 
-.clients .carousel-clients {
-    height: 300px;
-}
 .clients .carousel-clients .card {
     min-width: 0;
     word-wrap: break-word;
@@ -43,4 +40,63 @@
     border: 1px solid #e8e8e8;
     border-radius: 5px;
     padding: 10px 10px;
+}
+.carousel-clients .logo-wrap .logo-img {
+    min-width: 160px !important;
+    min-height: 70px;
+    object-fit: contain;
+    width: auto;
+    height: 100%;
+}
+.carousel-clients .swiper-wrapper .swiper-slide {
+    font-size: 16px;
+    line-height: 54px;
+    color: #0187c9;
+    font-family: Gilroy-ExtraBold, Arial, sans-serif;
+    text-align: center;
+}
+.carousel-clients .swiper-button-prev,
+.carousel-clients .swiper-button-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    transition: opacity .15s ease;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #007be0;
+    top: calc(50% - 3px);
+    opacity: 1;
+    left: -10px;
+    z-index: 1;
+}
+.carousel-clients .swiper-button-next {
+    left: calc(100% - 20px - 3px);
+}
+.carousel-clients .swiper-button-next::after,
+.carousel-clients .swiper-button-prev::after {
+    content: ''!important;
+    background-image: url(../assets/slider/img/icon_arrow.svg)!important;
+    background-size: 8px!important;
+    background-position: center;
+    background-repeat: no-repeat!important;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: no-repeat 50% / 100% 100%;
+}
+.carousel-clients .swiper-button-prev::after {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.carousel-clients .swiper-button-prev.swiper-button-disabled, 
+.carousel-clients .swiper-button-next.swiper-button-disabled {
+    opacity: 0.35;
+    cursor: auto;
+    pointer-events: none;
 }

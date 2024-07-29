@@ -1,18 +1,21 @@
 ---
-import Slider from './Slider.jsx';
+import Slider from '../reactComponents/Slider.jsx';
 import buildKotlImg from '../../assets/slider/banner/build-kotl.webp';
 import parKotlImg from '../../assets/slider/banner/par-kotl.webp';
 import prUglKotlImg from '../../assets/slider/banner/pr-ugl-kotl.webp';
 
 const slides = [
-    {img: buildKotlImg.src, title: 'Модульные котельные'}, 
-    {img: parKotlImg.src, title: 'Промышленные котлы'}, 
-    {img: prUglKotlImg.src, title: 'Твердотопливные котлы'}
+    {id:1, img: buildKotlImg.src, title: 'Модульные котельные', banner: true}, 
+    {id:2, img: parKotlImg.src, title: 'Промышленные котлы', banner: true}, 
+    {id:3, img: prUglKotlImg.src, title: 'Твердотопливные котлы', banner: true}
 ];
-const settings = {
+const sliderSettings = {
     slidesPerView: 1,
-    autoplay: 4000
+    autoplay: 100000,
+    spaceBetween: 50,
+    effect: 'fade',
+    button: 'banner'
 }
 ---
 
-<Slider slides={slides} sliderSettings={settings} client:load />
+<Slider client:load {slides} {sliderSettings} />
